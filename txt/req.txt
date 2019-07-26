@@ -1,0 +1,35 @@
+Регистрация нового пользователя
+POST https://localhost:44391/api/accounts/Register
+Dody
+{    
+    "Login": "Jeka",
+    "Password": "111111",
+    "ConfirmPassword": "111111",
+    "Name": "Jekka",
+    "Email" : "sdf@fgdf.com" 
+}
+
+"Jeka user registered ok."
+
+---------------------------------------------------------------------------------------------------
+Проверка перед получением токена
+POST https://localhost:44391/api/accounts/CheckLogin
+{    
+    "Login": "Jeka",
+    "Password": "111111"
+}
+"Jeka login/Password ok."
+
+--------------------------------------------------------------------------------------------------
+POST - авторизация пользователя (получение токена)
+https://localhost:44391/token
+Body, raw
+username=Jeka&password=111111&grant_type=password
+
+{
+    "access_token": "DemG0NIslr1EbBgOOehi9j358uM-evETepb1RK4KJS9_TH-fog0EU8ZYL-_s_2Xb5AlDwDwOE6YiL-frsPN8YnLPks5LM7Po9wyPktxyXqcgNZkU8hsEFkt_EaCwnfi4mYKLvNSpwXzbN6xckuqbiNy08zS5al6McYtxKxNw-1n8RNZEKMjfBsn0buH_bwA_d5zGZIv4NsnD6sf6be8YAvbrHvQcL-Jyd5Yd8D2bS98OzryB40qDqvd47FkRniCjopRrwrwIs5V6RiRc9ldPXfD9-v09qOe4rfzbkWnF5wpWjg2R3pTAvkEhi5CFOuD5ED_XMRCiQ6aZNV49uKOxbkaSNu32uLfgDq5_KcYOzNl0Px0ZNd6dn1XHmoeeyilszPFi0UQ6OPNRb4dNRkGmlVdMpgjE2mn-YuB2vUTxYWG6-j8Q9SJzdg9qxS2cyi_gFDFgEh4YU8ScpTOPl3a9WrlFTFVwQflc_ICOz_7rBfg",
+    "token_type": "bearer",
+    "expires_in": 1209599
+}
+
+

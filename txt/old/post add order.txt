@@ -1,0 +1,13 @@
+POST http://localhost:60212/api/orders/
+{
+    "Details": [
+        {
+            "ProductId": 1,
+            "Quantity": 2
+        },
+        {
+            "ProductId": 2,
+            "Quantity": 3
+        }
+    ]
+}

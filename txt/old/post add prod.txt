@@ -1,0 +1,6 @@
+POST http://localhost:60212/api/products/
+
+{    
+    "ProductName": "DDD-123",
+    "ProductPrice": 999.0
+}

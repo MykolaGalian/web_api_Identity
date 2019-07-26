@@ -1,0 +1,8 @@
+//PUT api/orders/5/products - добавление товара к выбранному заказу
+
+{
+           
+            "Quantity": 15,            
+            "ProductId": 3,
+            "OrderId": 5
+}
